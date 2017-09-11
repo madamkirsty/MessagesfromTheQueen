@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.sailthru.kmorris.messagesfromthequeen.MainActivity"
+    android:background="@drawable/bianca">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:elevation="24dp"
+        app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:text="Raven"
+        android:onClick="queen1"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:id="@+id/button1" />
+
+    <Button
+        android:text="Jujubee"
+        android:onClick="queen2"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:id="@+id/button3"
+        app:layout_anchorGravity="top|right"
+        android:layout_gravity="bottom|left" />
+
+    <Button
+        android:text="LATRICE"
+        android:onClick="queen3"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:id="@+id/button2"
+        app:layout_anchorGravity="top|right"
+        android:layout_gravity="top|right" />
+
+    <Button
+        android:text="Bianca"
+        android:onClick="queen4"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:id="@+id/button4"
+        app:layout_anchorGravity="center_vertical|left"
+        android:layout_gravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>

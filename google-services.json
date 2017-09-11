@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "654337095210",
+    "firebase_url": "https://fishyqueens-7defd.firebaseio.com",
+    "project_id": "fishyqueens-7defd",
+    "storage_bucket": "fishyqueens-7defd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654337095210:android:cf749d648ce56ac4",
+        "android_client_info": {
+          "package_name": "com.sailthru.kmorris.messagesfromthequeen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654337095210-siqd6btoh3rudbl5qssbehho58klo97c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1-tk7M2sqH9Y98e5UIStFRn6Bs-lANwc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

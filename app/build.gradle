@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.sailthru.kmorris.messagesfromthequeen"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        dataBinding {
+            enabled = true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://github.com/carnivalmobile/maven-repository/raw/master/"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.carnival.sdk:carnival:3.+'
+
+    // already includes 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.github.brnunes:swipeablerecyclerview:1.0.2'
+    // only necessary if you are using CardView
+    compile 'com.android.support:cardview-v7:23.1.1'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':cardstream');
+
+    compile 'com.google.android.gms:play-services:9.6.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

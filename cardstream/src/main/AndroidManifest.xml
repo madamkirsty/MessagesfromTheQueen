@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carnivalmobile.stream.card">
+
+    <application>
+        android:name="com.carnivalmobile.stream.standard.TileStreamActivity"
+        android:theme="@style/AppTheme.NoActionBar"
+    </application>
+
+</manifest>
